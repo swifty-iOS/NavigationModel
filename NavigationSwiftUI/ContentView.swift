@@ -17,6 +17,7 @@ struct ContentView: View {
             VStack {
                 TestPush()
                 TestSheet()
+                TestModal()
                 TestAlert()
                 TestActionSheet()
                 
@@ -49,7 +50,6 @@ struct TestAlert: View {
             self.alertVM = AlertViewModel(title: "Test Alert", message: "Alert message here.")
             }
         .alert($alertVM)
-      // .navigate($alertVM)
     }
 }
 
@@ -65,7 +65,7 @@ struct TestSheet: View {
     }
 }
 
-// MARK:- Actio sheet
+// MARK:- Action sheet
 struct TestActionSheet: View {
     
     @State private var actionSheetVM: ActionSheetViewModel?
@@ -75,6 +75,33 @@ struct TestActionSheet: View {
         Button("Action Sheet") {
             self.actionSheetVM = ActionSheetViewModel(title: "Action Title", message: "Action message", buttons: [.default(Text("Option 1")), .default(Text("Option 2")), .cancel()])
         }.actionSheet($actionSheetVM)
+    }
+}
+
+// MARK:- Transparent Modal
+struct TestModal: View {
+    
+    @State private var modalVM: ModalPresentationViewModel?
+    
+    var body: some View {
+        
+        Button("Present Modal View") {
+            if let src = SceneDelegate.shared.window?.rootViewController {
+                self.modalVM = ModalPresentationViewModel(source: src, destination: ModalView())
+            }
+        }.modal($modalVM)
+    }
+    
+    struct ModalView: View {
+        @EnvironmentObject var presenationMode: ModalPresentationMode
+        var body: some View {
+            ZStack {
+                Color.black.opacity(0.5).edgesIgnoringSafeArea(.all)
+                Button("Close") {
+                    self.presenationMode.dimiss()
+                    }.padding(8).background(Color.blue).foregroundColor(.white).cornerRadius(5)
+            }
+        }
     }
 }
 
