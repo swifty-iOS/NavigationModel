@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C41A55FA24A5CFE8000834EB /* NavigationModel */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NavigationModel; path = ../../NavigationModel; sourceTree = "<group>"; };
+		C41A55FA24A5CFE8000834EB /* NavigationModel */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NavigationModel; path = ../NavigationModel; sourceTree = "<group>"; };
 		C47235BD24A5C911009D3BFC /* NavigationSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47235C024A5C911009D3BFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C47235C224A5C911009D3BFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
