@@ -17,6 +17,6 @@ let package = Package(
     ],
     targets: [
             .target(name: "NavigationModel",
-                    path: "Source")
+                    path: "NavigationModel/Source")
     ]
 )
