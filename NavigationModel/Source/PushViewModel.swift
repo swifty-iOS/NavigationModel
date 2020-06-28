@@ -14,8 +14,13 @@ import SwiftUI
 ///
 ///     @State private var pushVM: PushViewModel?
 ///
-///     Button("Push View") {
-///         self.pushVM = PushViewModel(destination: Text("New view pushed."))
+///     VStack {
+///         Button("Login") {
+///             self.pushVM = PushViewModel(destination: Text("Login View"))
+///         }
+///         Button("Sign Up") {
+///             self.pushVM = PushViewModel(destination: Text("Sign Up View"))
+///         }
 ///     }.push($pushVM)
 ///
 @available(iOS 13.0, *)
