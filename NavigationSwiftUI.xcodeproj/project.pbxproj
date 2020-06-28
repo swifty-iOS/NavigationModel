@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C41A55FF24A5D3DF000834EB /* NavigationModel in Frameworks */ = {isa = PBXBuildFile; productRef = C41A55FE24A5D3DF000834EB /* NavigationModel */; };
 		C47235C124A5C911009D3BFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47235C024A5C911009D3BFC /* AppDelegate.swift */; };
 		C47235C324A5C911009D3BFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47235C224A5C911009D3BFC /* SceneDelegate.swift */; };
 		C47235C524A5C911009D3BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47235C424A5C911009D3BFC /* ContentView.swift */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C41A55FA24A5CFE8000834EB /* NavigationModel */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NavigationModel; path = ../NavigationModel; sourceTree = "<group>"; };
 		C47235BD24A5C911009D3BFC /* NavigationSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47235C024A5C911009D3BFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C47235C224A5C911009D3BFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +31,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C41A55FF24A5D3DF000834EB /* NavigationModel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +64,6 @@
 		C47235BF24A5C911009D3BFC /* NavigationSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				C41A55FA24A5CFE8000834EB /* NavigationModel */,
 				C47235C024A5C911009D3BFC /* AppDelegate.swift */,
 				C47235C224A5C911009D3BFC /* SceneDelegate.swift */,
 				C47235C424A5C911009D3BFC /* ContentView.swift */,
@@ -104,7 +100,6 @@
 			);
 			name = NavigationSwiftUI;
 			packageProductDependencies = (
-				C41A55FE24A5D3DF000834EB /* NavigationModel */,
 			);
 			productName = NavigationSwiftUI;
 			productReference = C47235BD24A5C911009D3BFC /* NavigationSwiftUI.app */;
@@ -134,6 +129,8 @@
 				Base,
 			);
 			mainGroup = C47235B424A5C911009D3BFC;
+			packageReferences = (
+			);
 			productRefGroup = C47235BE24A5C911009D3BFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -357,13 +354,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C41A55FE24A5D3DF000834EB /* NavigationModel */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = NavigationModel;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C47235B524A5C911009D3BFC /* Project object */;
 }
