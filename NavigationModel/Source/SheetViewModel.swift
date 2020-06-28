@@ -18,6 +18,7 @@ import SwiftUI
 ///         self.sheetVM = SheetViewModel(Text("New presented sheet."))
 ///     }.sheet($sheetVM)
 ///
+@available(iOS 13.0, *)
 public struct SheetViewModel: Identifiable {
     
     public let id = 1
@@ -38,6 +39,7 @@ public struct SheetViewModel: Identifiable {
 }
 
 // MARK:- Sheet View Modifier
+@available(iOS 13.0, *)
 public extension View {
     
     /// Modify view to present sheet

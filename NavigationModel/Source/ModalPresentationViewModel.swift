@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 public struct ModalPresentationViewModel {
     
     let destination: AnyView
@@ -23,6 +24,7 @@ public struct ModalPresentationViewModel {
     }
 }
 
+@available(iOS 13.0, *)
 public final class ModalPresentationMode: ObservableObject {
     
     public var animation = false
@@ -49,6 +51,7 @@ public final class ModalPresentationMode: ObservableObject {
 }
 
 // MARK: ViewModifer for Preseting Transparent View
+@available(iOS 13.0, *)
 private struct ModalPresenationViewModifier: ViewModifier {
     
     @ObservedObject private var viewModel: ModalPresentationMode
@@ -62,7 +65,7 @@ private struct ModalPresenationViewModifier: ViewModifier {
     }
 }
 
-
+@available(iOS 13.0, *)
 public extension View {
     
     func modal(_  model: Binding<ModalPresentationViewModel?>) -> some View {

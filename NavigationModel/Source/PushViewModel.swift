@@ -18,6 +18,7 @@ import SwiftUI
 ///         self.pushVM = PushViewModel(destination: Text("New view pushed."))
 ///     }.push($pushVM)
 ///
+@available(iOS 13.0, *)
 public struct PushViewModel {
     
     let destination: AnyView
@@ -38,6 +39,7 @@ public struct PushViewModel {
 
 // MARK:- PushViewModifier
 /// Keeps the track of presentation state
+@available(iOS 13.0, *)
 private struct PushViewModifier: ViewModifier {
     
     @ObservedObject private var viewModel: ViewModel
@@ -69,6 +71,7 @@ private struct PushViewModifier: ViewModifier {
 }
 
 // MARK:- Push View Modifier
+@available(iOS 13.0, *)
 public extension View {
     
     /// Modify view with given model to push

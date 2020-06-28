@@ -18,6 +18,7 @@ import SwiftUI
 ///         self.alertVM = AlertViewModel(title: "title", message: "Message")
 ///     }.alert($alertVM)
 ///
+@available(iOS 13.0, *)
 public struct AlertViewModel: Identifiable {
     
     public let id = 0
@@ -58,6 +59,7 @@ public struct AlertViewModel: Identifiable {
 }
 
 // MARK:- Alert View Modifier
+@available(iOS 13.0, *)
 public extension View {
     
     /// Modify view to show AlertViewModel

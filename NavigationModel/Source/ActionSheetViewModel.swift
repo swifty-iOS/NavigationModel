@@ -18,6 +18,7 @@ import SwiftUI
 ///         self.actionVM = ActionSheetViewModel(title: "title", message: "message", onCancel: nil)
 ///     }.actionSheet($actionVM)
 ///
+@available(iOS 13.0, *)
 public struct ActionSheetViewModel: Identifiable {
     
     public let id = 2
@@ -66,6 +67,7 @@ public struct ActionSheetViewModel: Identifiable {
 }
 
 // MARK:- ActionSheet View Modifier
+@available(iOS 13.0, *)
 public extension View {
     
     /// View modifier for action sheet
